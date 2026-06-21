@@ -1,5 +1,7 @@
 # Stonecutter Fabric & NeoForge template
 
+honestly i have no clue what it does but it works lol
+
 ## Useful links
 
 - [Stonecutter beginner's guide](https://stonecutter.kikugie.dev/wiki/start/): *spoiler: you* ***need*** *to understand
