@@ -31,7 +31,6 @@ neoForge {
 
 	runs {
 		register("client") {
-
 			client()
 
 			systemProperty("neoforge.enabledGameTestNamespaces", modId)
@@ -49,8 +48,10 @@ neoForge {
 		// define mod <-> source bindings
 		// these are used to tell the game which sources are for which mod
 		// multi mod projects should define one per mod
+		sourceSets.register("client")
 		register(modId) {
 			sourceSet(sourceSets["main"])
+			sourceSet(sourceSets["test"])
 		}
 	}
 }
