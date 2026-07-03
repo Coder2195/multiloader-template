@@ -1,6 +1,9 @@
 plugins {
 	id("net.fabricmc.fabric-loom")
+	id("dev.kikugie.fletching-table.fabric") version "0.1.0-alpha.22"
 }
+
+
 
 // DO NOT set group = ...!
 val version = property("mod.version")
@@ -55,6 +58,13 @@ loom {
 		preferGradleTask = true
 		generateRunConfig = true
 		jvmArguments.add("-Dmixin.debug.export=true -XX:+AllowEnhancedClassRedefinition")
+	}
+}
+
+fabricApi {
+	configureDataGeneration {
+		client = true
+		outputDirectory = rootProject.file("src/generated/resources")
 	}
 }
 

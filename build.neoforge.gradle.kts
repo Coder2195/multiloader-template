@@ -1,6 +1,7 @@
 plugins {
 	id("net.neoforged.moddev") version "2.0.140"
 	id("neoforge-mutex")
+	id("dev.kikugie.fletching-table.neoforge") version "0.1.0-alpha.22"
 }
 
 val modId = property("mod.id") as String
