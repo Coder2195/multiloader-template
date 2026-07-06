@@ -43,6 +43,13 @@ loom {
 
 	splitEnvironmentSourceSets()
 
+	mods {
+		create("rewired") {
+			sourceSet(sourceSets["main"])
+			sourceSet(sourceSets["client"])
+		}
+	}
+
 	decompilerOptions.named("vineflower") {
 		options.put("mark-corresponding-synthetics", "1")
 	}
